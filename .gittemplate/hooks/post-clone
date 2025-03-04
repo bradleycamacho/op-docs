@@ -1,0 +1,2 @@
+#!/bin/sh
+sh scripts/setup-hooks.sh
