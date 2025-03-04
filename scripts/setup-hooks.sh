@@ -1,6 +1,7 @@
 #!/bin/sh
 HOOKS_DIR=".git/hooks"
 
+# Ensure the hooks directory exists
 mkdir -p $HOOKS_DIR
 
 # Create the post-checkout hook
@@ -11,4 +12,5 @@ if [ -f package.json ]; then
 fi
 EOL
 
+# Ensure the hook is executable
 chmod +x $HOOKS_DIR/post-checkout
